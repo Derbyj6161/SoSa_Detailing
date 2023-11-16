@@ -1,0 +1,22 @@
+:root{
+    --primary-color: #070707;
+    --secondary-color: #B6B6B6;
+    --tertiary-color: #FBFBFB;
+    --accent-color: #E31B30;
+    --accent-dark-color: #960917;
+    font-size: 16px;
+}
+/*css reset*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+img{
+  max-width: 100%;
+  display: block;
+}
+

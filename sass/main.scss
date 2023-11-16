@@ -1,0 +1,42 @@
+
+//custom colors
+$primary: #E31B30;
+$secondary:#b6b6b6;
+$dark: #050505;
+$light:#fbfbfb;
+$headings-font-family: 'Bebas Neue';
+$font-family-sans-serif:'Roboto Condensed';
+
+
+//navbar-toggler-icon
+$navbar-dark-toggler-border-color:none;
+$navbar-dark-color: $light;
+
+$nav-link-font-weight:300;
+
+.banner{
+    vertical-align: middle;
+    background: linear-gradient(rgb(7,7,7,.5), rgb(7,7,7,0.5)), url(/media/bannerImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.intro-col{
+    position: relative;
+}
+.intro-col::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7rem;
+    height: 7rem;
+    border-top: 4px solid $primary;
+    border-left: 4px solid $primary;
+}
+
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
