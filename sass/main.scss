@@ -6,6 +6,20 @@ $dark: #050505;
 $light:#fbfbfb;
 $headings-font-family: 'Bebas Neue';
 $font-family-sans-serif:'Roboto Condensed';
+$font-size-base: 1rem;
+
+$font-sizes:(
+    7: $font-size-base * .8
+);
+
+
+//heading sizes
+$h1-font-size:                $font-size-base * 3.5 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2.5 !default;
+$h4-font-size:                $font-size-base * 2 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base !default;
 
 
 //navbar-toggler-icon
@@ -14,12 +28,18 @@ $navbar-dark-color: $light;
 
 $nav-link-font-weight:300;
 
+section > .container{
+    border-bottom: 1px solid $secondary;
+}
+
+
 .banner{
     vertical-align: middle;
     background: linear-gradient(rgb(7,7,7,.5), rgb(7,7,7,0.5)), url(/media/bannerImage.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    width: 100%;
+    height: auto;
 }
 .intro-col{
     position: relative;
