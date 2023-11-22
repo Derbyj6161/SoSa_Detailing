@@ -4,12 +4,14 @@ $primary: #E31B30;
 $secondary:#b6b6b6;
 $dark: #050505;
 $light:#fbfbfb;
+$blue:    #0d6efd;
+
 $headings-font-family: 'Bebas Neue';
 $font-family-sans-serif:'Roboto Condensed';
 $font-size-base: 1rem;
 
 $font-sizes:(
-    7: $font-size-base * .8
+    7: $font-size-base * .8 
 );
 
 
@@ -27,6 +29,17 @@ $navbar-dark-toggler-border-color:none;
 $navbar-dark-color: $light;
 
 $nav-link-font-weight:300;
+
+$focus-ring-width:      .25rem ;
+$focus-ring-opacity:    .25 ;
+$focus-ring-color:      rgba($blue, $focus-ring-opacity) ;
+$focus-ring-blur:       0 ;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color ;
+
+$input-focus-border-color:              tint-color($blue, 50%) !default;
+$input-btn-focus-box-shadow:    $focus-ring-box-shadow ;
+$input-focus-box-shadow:        $input-btn-focus-box-shadow ;
+
 
 section > .container{
     border-bottom: 1px solid $secondary;
@@ -54,6 +67,21 @@ section > .container{
     border-top: 4px solid $primary;
     border-left: 4px solid $primary;
 }
+
+
+    
+.form-control:focus {
+
+    border-color: $focus-ring-color;
+    box-shadow: $input-focus-box-shadow;
+    outline: 0
+}
+
+
+
+
+
+
 
 
 
